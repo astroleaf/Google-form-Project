@@ -8,7 +8,8 @@
     body {
             background-color: #000;
             color: #fff;
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:large;
             margin: 0;
             padding: 0;
             height: 100vh;
@@ -21,8 +22,9 @@
             height: 100%;
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
-            perspective: 1500px;
+            perspective: 1000px;
         }
         
         .background {
@@ -45,21 +47,19 @@
             border: none;
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(15px);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         
         label {
             font-weight: bold;
             margin-bottom: 10px;
+            font-size: large;
             color: #fff;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        label:hover {
-            transform: scale(1.1);
-            background-color: #0a0202;
-            color: #0022ff;
+            animation: fade-in 0.5s ease-in-out forwards;
         }
         
         input[type="text"] {
@@ -67,7 +67,7 @@
             padding: 10px;
             margin-bottom: 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 9px;
             background-color: rgba(255, 255, 255, 0.5);
             color: #000;
             cursor: pointer;
@@ -80,10 +80,10 @@
         }
         
         button[type="submit"] {
-            width: 60%;
+            width: 80%;
             padding: 10px;
             border: none;
-            border-radius: 5px;
+            border-radius: 9px;
             background-color: #ff7300;
             color: #fff;
             font-weight: bold;
@@ -92,9 +92,9 @@
         }
         
         button[type="submit"]:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             background-color: #fff;
-            color: #00f2ff;
+            color: #0f1415;
         }
 
     </style>
@@ -109,7 +109,8 @@
             <input type="text" name="entry.112137542"><br>
             <label for="entry.1564795261">University Mail Id</label><br>
             <input type="text" name="entry.1564795261"><br>
-            <label for="entry.1576335086">Why do you want to be a member of the XIM University ACM Student Chapter? </label><br>
+            <label for="entry.1576335086">Why do you want to be a member of</label><br>
+            <label for="entry.1576335086">the XIM University ACM Student Chapter? </label><br>
             <input type="text" name="entry.1576335086"><br>
             <label for="entry.1508638584">What do you expect from the Chapter?</label><br>
             <input type="text" name="entry.1508638584"><br>
