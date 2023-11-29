@@ -43,6 +43,21 @@
             opacity: 0.8;
             z-index: 0;
         }
+
+        .secondary-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(photos/Untitled\ design.jpg); /* Change the path to your secondary background image */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.8;
+            z-index: 0;
+            display: none; /* Initially hide the secondary background */
+            z-index: 0;
+        }
         
         form {
             position: center;
@@ -122,6 +137,13 @@
         @media only screen and (max-width: 480px) {
             form {
                 width: 90%;
+            }
+            .background {
+                display: none; /* Hide the primary background on small screens */
+            }
+
+            .secondary-background {
+                display: block; /* Show the secondary background on small screens */
             }
         }
 
