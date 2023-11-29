@@ -56,7 +56,6 @@
             opacity: 0.8;
             z-index: 0;
             display: none; /* Initially hide the secondary background */
-            z-index: 0;
         }
         
         form {
@@ -139,11 +138,11 @@
                 width: 90%;
             }
             .background {
-                display: none; /* Hide the primary background on small screens */
+                display: block; /* Hide the primary background on small screens */
             }
 
             .secondary-background {
-                display: block; /* Show the secondary background on small screens */
+                display: none; /* Show the secondary background on small screens */
             }
         }
 
