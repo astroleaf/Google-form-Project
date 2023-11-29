@@ -138,11 +138,12 @@
                 width: 90%;
             }
             .background {
-                display: block; /* Hide the primary background on small screens */
+                display: none; /* Hide the primary background on small screens */
             }
 
             .secondary-background {
-                display: none; /* Show the secondary background on small screens */
+                display: block; /* Show the secondary background on small screens */
+                z-index: -1;
             }
         }
 
